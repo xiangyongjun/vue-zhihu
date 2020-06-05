@@ -135,7 +135,16 @@ export default {
         return
       }
 
-      this.$api.register(this.form.username, this.form.password)
+      let loadingInstance = Loading.service({ fullscreen: true, text: '注册中' })
+      this.$api.register(this.form.username, this.form.password).then(() => {
+        this.form.username = this.reg.username
+        this.form.password = this.reg.password
+        this.reg.username = ''
+        this.reg.password = ''
+        this.reg.repeat = ''
+        this.activeName = 'first'
+        loadingInstance.close()
+      })
     }
   }
 }

@@ -35,7 +35,7 @@ axios.interceptors.response.use(response => {
             type: 'success'
         })
     }
-    if (response.data.data.token) {
+    if (response?.data?.data?.token) {
         localStorage.setItem('token', response.data.data.token)
     }
     return response.data
