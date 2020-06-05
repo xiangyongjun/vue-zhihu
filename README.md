@@ -1,5 +1,5 @@
 # vue-zhihu
-vue cli3 + vue-router + axios + mock.js 仿知乎
+vue cli3 + vue-router + axios + mock.js + element ui 仿知乎
 
 ## 预览图
 ![图1](https://cdn.xiangyongjun.cn/WX20200605-184200_1591353774282.png)
