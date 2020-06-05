@@ -1,24 +1,8 @@
-# vue-homework
+# vue-zhihu
 
-## Project setup
-```
-npm install
-```
+## 预览图
+![图1](https://cdn.xiangyongjun.cn/WX20200605-184200_1591353774282.png)
+![图2](https://cdn.xiangyongjun.cn/WX20200605-184232_1591353784056.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 预览地址
+[Vue知乎](http://zhihu.xiangyongjun.cn/ "知乎")
