@@ -48,37 +48,37 @@
       <el-card class="category" body-style="padding: 0;">
         <ul>
             <li>
-              <a href>
+              <a href class="live">
                 <i style="color: #ffc83e; font-size: 25px; margin-bottom: 10px;" class="el-icon-lightning"></i>
                 <p>live</p>
               </a>
             </li>
             <li>
-              <a href>
+              <a href class="bookStore">
                 <i style="color: #00cf7f; font-size: 25px; margin-bottom: 10px;" class="el-icon-notebook-1"></i>
                 <p>书店</p>
               </a>
             </li>
             <li>
-              <a href>
+              <a href class="desk">
                 <i style="color: #0079f5; font-size: 25px; margin-bottom: 10px;" class="el-icon-eleme"></i>
                 <p>圆桌</p>
               </a>
             </li>
             <li>
-              <a href>
+              <a href class="column">
                 <i style="color: #007ddf; font-size: 25px; margin-bottom: 10px;" class="el-icon-bank-card"></i>
                 <p>专栏</p>
               </a>
             </li>
             <li>
-              <a href>
+              <a href class="consult">
                 <i style="color: #396de4; font-size: 25px; margin-bottom: 10px;" class="el-icon-money"></i>
                 <p>付费咨询</p>
               </a>
             </li>
             <li>
-              <a href>
+              <a href class="wiki">
                 <i style="color: #4d5dc3; font-size: 25px; margin-bottom: 10px;" class="el-icon-notebook-2"></i>
                 <p>百科</p>
               </a>
@@ -197,5 +197,29 @@ export default {
   align-items: center;
   color: #8590a6;
   font-size: 14px;
+}
+
+.right .category ul li .live:hover {
+  color: #ffc83e;
+}
+
+.right .category ul li .bookStore:hover {
+  color: #00cf7f;
+}
+
+.right .category ul li .desk:hover {
+  color: #0079f5;
+}
+
+.right .category ul li .column:hover {
+  color: #007ddf;
+}
+
+.right .category ul li .consult:hover {
+  color: #007ddf;
+}
+
+.right .category ul li .wiki:hover {
+  color: #4d5dc3;
 }
 </style>

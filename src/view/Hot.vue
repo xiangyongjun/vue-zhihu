@@ -54,8 +54,8 @@ export default {
     },
     getList() {
       if (!this.lock) {
-        this.lock = true;
-        this.loading = true;
+        this.lock = true
+        this.loading = true
         this.$api.getHotList().then(res => {
           res.data.forEach(item => {
             this.hotList.push(item)
@@ -69,11 +69,11 @@ export default {
       let scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
-        document.body.scrollTop;
+        document.body.scrollTop
       let listHeight =
         this.$refs.list.offsetHeight -
         document.body.offsetHeight +
-        this.$refs.list.offsetTop;
+        this.$refs.list.offsetTop
       if (scrollTop > listHeight) {
         this.getList()
       }
