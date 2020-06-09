@@ -46,6 +46,16 @@
           <a href>草稿箱</a>
         </div>
       </el-card>
+      <el-card>
+        <a href style="width: 100%; display: flex; justify-content: space-between;">
+          <div style="display: flex; align-items: center;">
+            <i style="color: #8590a6; font-size: 18px;" class="el-icon-user-solid"></i>
+            <span style="padding-left: 8px; color: #8590a6; font-size: 14px;">创作者中心</span>
+            <span style="padding-left: 8px; color: rgb(0, 132, 255); font-size: 14px;">Lv 1</span>
+          </div>
+          <i style="color: #8590a6; font-size: 18px;" class="el-icon-arrow-right"></i>
+        </a>
+      </el-card>
       <el-card class="category" body-style="padding: 0;">
         <ul>
             <li>
@@ -86,8 +96,14 @@
             </li>
         </ul>
       </el-card>
+      <el-card>
+        <a target="_blank" href="https://github.com/xiangyongjun/vue-zhihu" class="github">
+          <el-avatar size="medium" src="http://img4.imgtn.bdimg.com/it/u=2586243650,1628445668&fm=26&gp=0.jpg"></el-avatar>
+          <span>Give me a Star, Thanks.</span>
+        </a>
+      </el-card>
       <el-card body-style="padding: 0;">
-        <a href style="width: 100%; height: 100%;">
+        <a target="_blank" href="https://github.com/xiangyongjun" style="width: 100%; height: 100%;">
           <img style="width: 100%; height: 100%; display: block;"
           src="http://img3.imgtn.bdimg.com/it/u=1224394186,2419055903&fm=26&gp=0.jpg"
           class="image"
@@ -222,5 +238,22 @@ export default {
 
 .right .category ul li .wiki:hover {
   color: #4d5dc3;
+}
+
+.right .github {
+  width: 100%;
+  height: 100%;
+  color: #8590a6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .github:hover{
+  color: rgb(0, 132, 255);;
+}
+
+.right .github span {
+  font-weight: bold;
 }
 </style>
