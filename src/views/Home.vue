@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <NavMenu />
-    <router-view class="nav_top" />
+    <router-view class="main_top"></router-view>
     <el-backtop>
       <el-tooltip effect="dark" content="回到顶部" placement="left">
         <button class="back_top" type="button">
@@ -39,7 +39,7 @@ export default {
   background-color: #f5f5f5;
 }
 
-.nav_top {
+.main_top {
   margin-top: 52px !important;
 }
 

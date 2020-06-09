@@ -1,6 +1,6 @@
 <template>
   <div id="main">
-    <div class="left">
+    <div class="main-left">
       <el-card class="box-card" body-style="padding: 0;">
         <div slot="header" class="clearfix">
           <router-link :to="{name: 'Recommend'}">推荐</router-link>
@@ -11,6 +11,7 @@
       </el-card>
     </div>
     <div class="right">
+      <router-view name="mainRight"></router-view>
       <el-card class="NewGlobalWrite" body-style="padding: 0;">
         <div class="top">
           <ul>
@@ -113,7 +114,7 @@ export default {
   justify-content: space-between;
 }
 
-.left {
+.main-left {
   width: 694px;
 }
 

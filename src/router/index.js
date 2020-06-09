@@ -15,7 +15,7 @@ const routes = [
         meta: {
             title: '首页 - 知乎'
         },
-        component: () => import('@/view/Home.vue'),
+        component: () => import('@/views/Home.vue'),
         children: [
             {
                 path: '/',
@@ -23,7 +23,7 @@ const routes = [
                 meta: {
                     title: '首页 - 知乎'
                 },
-                component: () => import('@/view/Main.vue'),
+                component: () => import('@/views/Main.vue'),
                 children: [
                     {
                         path: 'recommend',
@@ -31,7 +31,7 @@ const routes = [
                         meta: {
                             title: '首页 - 知乎'
                         },
-                        component: () => import('@/view/Recommend.vue')
+                        component: () => import('@/views/Recommend.vue')
                     },
                     {
                         path: 'follow',
@@ -39,7 +39,7 @@ const routes = [
                         meta: {
                             title: '首页 - 知乎'
                         },
-                        component: () => import('@/view/Follow.vue')
+                        component: () => import('@/views/Follow.vue')
                     },
                     {
                         path: 'hot',
@@ -47,7 +47,7 @@ const routes = [
                         meta: {
                             title: '首页 - 知乎'
                         },
-                        component: () => import('@/view/Hot.vue')
+                        component: () => import('@/views/Hot.vue')
                     }
                 ]
             },
@@ -57,14 +57,14 @@ const routes = [
                 meta: {
                     title: '发现 - 知乎'
                 },
-                component: () => import('@/view/Explore.vue'),
+                component: () => import('@/views/Explore.vue'),
             }
         ]
     },
     {
         path: '/login',
         name: 'Login',
-        component: () => import('@/view/Login.vue'),
+        component: () => import('@/views/Login.vue'),
         meta: {
             title: '登录'
         }
